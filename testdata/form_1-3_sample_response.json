@@ -1,0 +1,39 @@
+{
+  "fullName": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "signature": "Jane Doe",
+  "applicationDate_year": 2025,
+  "applicationDate_month": 5,
+  "applicationDate_day": 13,
+  "businessMotivation": "I want to launch a digital document startup in Japan to improve bureaucratic workflows.",
+  "yourRole": "Founder & CEO",
+  "qualifications": "10+ years in software engineering with startup and enterprise experience.",
+  "jointApplicants": "John Smith, Emily Tanaka",
+  "startupDate_year": 2025,
+  "startupDate_month": 6,
+  "startupDate_day": 1,
+  "businessType": "Information Technology",
+  "productsServices": "Form automation platform for expats and entrepreneurs.",
+  "officeLocation": "Tokyo, Minato-ku",
+  "capital": 5000,
+  "shareholders": [
+    {
+      "name": "Jane Doe",
+      "address": "123 Main Street, Tokyo",
+      "ratio": "80%"
+    },
+    {
+      "name": "John Smith",
+      "address": "456 Another Rd, Tokyo",
+      "ratio": "20%"
+    }
+  ],
+  "directorName": "John Smith",
+  "directorNationality": "American",
+  "directorAddress": "456 Another Rd, Tokyo",
+  "directorPost": "CTO",
+  "employeesFullTime": 2,
+  "employeesPartTime": 1,
+  "employeesTotal": 3,
+  "businessOutline": "A web application that simplifies form filling and document submission processes in Japan using bilingual, guided workflows."
+}

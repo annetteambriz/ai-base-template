@@ -1,0 +1,224 @@
+{
+  "ApplicantName": {
+    "answerKey": "fullName",
+    "type": "text",
+    "maxLength": 50,
+    "required": true
+  },
+  "Email": {
+    "answerKey": "email",
+    "type": "email",
+    "maxLength": 100,
+    "required": true
+  },
+  "BusinessMotivation": {
+    "answerKey": "businessMotivation",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": true
+  },
+  "ApplicantRole": {
+    "answerKey": "yourRole",
+    "type": "text",
+    "maxLength": 100,
+    "required": true
+  },
+  "Qualifications": {
+    "answerKey": "qualifications",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": true
+  },
+  "JointApplicants": {
+    "answerKey": "jointApplicants",
+    "type": "textarea",
+    "maxLength": 100,
+    "required": false
+  },
+  "BusinessType": {
+    "answerKey": "businessType",
+    "type": "text",
+    "maxLength": 100,
+    "required": false
+  },
+  "ProductsServices": {
+    "answerKey": "productsServices",
+    "type": "textarea",
+    "maxLength": 300,
+    "required": false
+  },
+  "OfficeLocation": {
+    "answerKey": "officeLocation",
+    "type": "text",
+    "maxLength": 200,
+    "required": false
+  },
+  "CapitalAmount": {
+    "answerKey": "capital",
+    "type": "number",
+    "format": "¥ (JPY, thousands)",
+    "maxLength": 10,
+    "required": false
+  },
+  "Signature": {
+    "answerKey": "signature",
+    "type": "text",
+    "required": false
+  },
+  "ShareholderComposition": {
+    "answerKey": "shareholders",
+    "type": "table",
+    "columns": [
+      "Shareholder Name",
+      "Address",
+      "Shareholding Ratio"
+    ],
+    "required": false
+  },
+  "DirectorsList": {
+    "answerKey": "directors",
+    "type": "table",
+    "columns": [
+      "Name",
+      "Nationality",
+      "Address",
+      "Post"
+    ],
+    "required": false
+  },
+  "EmployeeCount": {
+    "answerKey": "employeeCount",
+    "type": "group",
+    "fields": [
+      {
+        "id": "employeesFullTime",
+        "type": "number"
+      },
+      {
+        "id": "employeesPartTime",
+        "type": "number"
+      },
+      {
+        "id": "employeesTotal",
+        "type": "number"
+      }
+    ],
+    "required": false
+  },
+  "BusinessOutline": {
+    "answerKey": "businessOutline",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": false
+  },
+  "SalesMethod": {
+    "answerKey": "salesMethod",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": false
+  },
+  "StartupPreparationTimeline": {
+    "answerKey": "preparationTimeline",
+    "type": "table",
+    "columns": [
+      "Month",
+      "Preparation Activities",
+      "Estimated Costs"
+    ],
+    "required": false
+  },
+  "RequiredResources": {
+    "answerKey": "resourcesRequired",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": false
+  },
+  "RevenueDifferentiation": {
+    "answerKey": "revenueDifferentiation",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": false
+  },
+  "ProfitPlan": {
+    "answerKey": "profitPlan",
+    "type": "table",
+    "columns": [
+      "Month",
+      "Sales",
+      "Cost of Sales",
+      "Gross Profit",
+      "Expenses",
+      "Operating Profit"
+    ],
+    "required": false
+  },
+  "FundingSources": {
+    "answerKey": "fundingSources",
+    "type": "table",
+    "columns": [
+      "Source",
+      "Amount",
+      "Purpose"
+    ],
+    "required": false
+  },
+  "LaborCosts": {
+    "answerKey": "laborCosts",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": false
+  },
+  "CashFlow": {
+    "answerKey": "cashFlow",
+    "type": "table",
+    "columns": [
+      "Month",
+      "Income",
+      "Expenses",
+      "Net Cash Flow"
+    ],
+    "required": false
+  },
+  "StartupDate_year": {
+    "answerKey": "startupDate_year",
+    "type": "number",
+    "min": 1900,
+    "max": 2100,
+    "required": false
+  },
+  "StartupDate_month": {
+    "answerKey": "startupDate_month",
+    "type": "number",
+    "min": 1,
+    "max": 12,
+    "required": false
+  },
+  "StartupDate_day": {
+    "answerKey": "startupDate_day",
+    "type": "number",
+    "min": 1,
+    "max": 31,
+    "required": false
+  },
+  "ApplicationDate_year": {
+    "answerKey": "applicationDate_year",
+    "type": "number",
+    "min": 1900,
+    "max": 2100,
+    "required": false
+  },
+  "ApplicationDate_month": {
+    "answerKey": "applicationDate_month",
+    "type": "number",
+    "min": 1,
+    "max": 12,
+    "required": false
+  },
+  "ApplicationDate_day": {
+    "answerKey": "applicationDate_day",
+    "type": "number",
+    "min": 1,
+    "max": 31,
+    "required": false
+  }
+}

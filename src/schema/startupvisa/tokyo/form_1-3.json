@@ -1,0 +1,298 @@
+{
+  "formName": "Tokyo Startup Visa Form 1-3",
+  "formDescription": "This form is for individuals applying for the Tokyo Startup Visa. It collects information about the applicant's business plan and personal details.",
+  "formVersion": "1.0",
+  "formType": "startupvisa",
+  "formId": "tokyo_startupvisa_form_1-3",
+  "pdfTemplate": "/pdfs/startup_visa_template.pdf",
+  "sections": [
+    {
+      "section": "Applicant Information",
+      "questions": [
+        {
+          "id": "fullName",
+          "label": "What is your full legal name?",
+          "placeholder": "e.g. Janet Doe",
+          "type": "text",
+          "pdfField": "ApplicantName",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "What is your email address?",
+          "type": "email",
+          "pdfField": "Email",
+          "required": true
+        },
+        {
+          "id": "signature",
+          "label": "Please provide your signature (type your name as a digital signature).",
+          "type": "text",
+          "pdfField": "Signature"
+        },
+        {
+          "id": "applicationDate",
+          "label": "Application date (Year / Month / Day)",
+          "type": "group",
+          "fields": [
+            {
+              "id": "applicationDate_year",
+              "label": "Year",
+              "type": "number",
+              "min": 1900,
+              "max": 2100,
+              "pdfField": "ApplicationDate_year"
+            },
+            {
+              "id": "applicationDate_month",
+              "label": "Month",
+              "type": "number",
+              "min": 1,
+              "max": 12,
+              "pdfField": "ApplicationDate_month"
+            },
+            {
+              "id": "applicationDate_day",
+              "label": "Day",
+              "type": "number",
+              "min": 1,
+              "max": 31,
+              "pdfField": "ApplicationDate_day"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Personal and Business Background",
+      "questions": [
+        {
+          "id": "businessMotivation",
+          "label": "Why are you starting a business in Tokyo? What are your goals?",
+          "type": "textarea",
+          "pdfField": "BusinessMotivation",
+          "required": true
+        },
+        {
+          "id": "yourRole",
+          "label": "What will your role or position be in the business?",
+          "type": "text",
+          "pdfField": "ApplicantRole",
+          "required": true
+        },
+        {
+          "id": "qualifications",
+          "label": "What qualifications or experience do you have for this business?",
+          "type": "textarea",
+          "pdfField": "Qualifications",
+          "required": true
+        },
+        {
+          "id": "jointApplicants",
+          "label": "Are any other individuals applying with you? If so, please list their full names.",
+          "type": "textarea",
+          "pdfField": "jointApplicants",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section": "Business Plan Overview",
+      "questions": [
+        {
+          "id": "startupDate",
+          "label": "When do you plan to start your business?",
+          "type": "group",
+          "fields": [
+            {
+              "id": "startupDate_year",
+              "label": "Year",
+              "type": "number",
+              "min": 1900,
+              "max": 2100,
+              "pdfField": "StartDate_year"
+            },
+            {
+              "id": "startupDate_month",
+              "label": "Month",
+              "type": "number",
+              "min": 1,
+              "max": 12,
+              "pdfField": "StartDate_month"
+            },
+            {
+              "id": "startupDate_day",
+              "label": "Day",
+              "type": "number",
+              "min": 1,
+              "max": 31,
+              "pdfField": "StartDate_day"
+            }
+          ]
+        },
+        {
+          "id": "businessType",
+          "label": "What industry is your business in?",
+          "type": "text",
+          "pdfField": "IndustryType",
+          "required": false
+        },
+        {
+          "id": "productsServices",
+          "label": "What products or services will you offer?",
+          "type": "textarea",
+          "pdfField": "ProductsServices",
+          "required": false
+        },
+        {
+          "id": "officeLocation",
+          "label": "Where will your office be located?",
+          "type": "text",
+          "pdfField": "OfficeLocation",
+          "required": false
+        },
+        {
+          "id": "shareholders",
+          "label": "List all shareholders including name, address, and shareholding ratio.",
+          "type": "table",
+          "columns": [
+            "Shareholder Name",
+            "Address",
+            "Shareholding Ratio"
+          ],
+          "pdfField": "ShareholderComposition"
+        },
+        {
+          "id": "directors",
+          "label": "List all directors (excluding the applicant): Name, Nationality, Address, and Post.",
+          "type": "table",
+          "columns": [
+            "Name",
+            "Nationality",
+            "Address",
+            "Post"
+          ],
+          "pdfField": "DirectorsList"
+        },
+        {
+          "id": "employeeCount",
+          "label": "Number of employees: Full-time, Part-time, and Total.",
+          "type": "group",
+          "fields": [
+            {
+              "id": "employeesFullTime",
+              "label": "Full-time employees",
+              "type": "number"
+            },
+            {
+              "id": "employeesPartTime",
+              "label": "Part-time employees",
+              "type": "number"
+            },
+            {
+              "id": "employeesTotal",
+              "label": "Total employees",
+              "type": "number"
+            }
+          ],
+          "pdfField": "EmployeeCount"
+        },
+        {
+          "id": "businessOutline",
+          "label": "Briefly describe the products or services your business will offer.",
+          "type": "textarea",
+          "pdfField": "BusinessOutline"
+        },
+        {
+          "id": "salesMethod",
+          "label": "Describe how you will sell or provide your goods/services (e.g., sales channels, unit price).",
+          "type": "textarea",
+          "pdfField": "SalesMethod"
+        }
+      ]
+    },
+    {
+      "section": "Preparation Timeline",
+      "questions": [
+        {
+          "id": "preparationTimeline",
+          "label": "Startup preparation timeline: activities for each of the next 6 months.",
+          "type": "table",
+          "columns": [
+            "Month",
+            "Preparation Activities",
+            "Estimated Costs"
+          ],
+          "pdfField": "StartupPreparationTimeline"
+        },
+        {
+          "id": "resourcesRequired",
+          "label": "List the business resources you will need (funds, office, licenses, employees, etc.).",
+          "type": "textarea",
+          "pdfField": "RequiredResources"
+        },
+        {
+          "id": "revenueDifferentiation",
+          "label": "What makes your business profitable and unique in Tokyo’s market?",
+          "type": "textarea",
+          "pdfField": "RevenueDifferentiation"
+        }
+      ]
+    },
+    {
+      "section": "Financial Projections",
+      "questions": [
+        {
+          "id": "capital",
+          "label": "How much startup capital will you use (in yen)?",
+          "type": "number",
+          "pdfField": "CapitalAmount",
+          "required": false
+        },
+        {
+          "id": "profitPlan",
+          "label": "Submit your 12-month profit plan (sales, COGS, profits, etc.).",
+          "type": "table",
+          "columns": [
+            "Month",
+            "Sales",
+            "Cost of Sales",
+            "Gross Profit",
+            "Expenses",
+            "Operating Profit"
+          ],
+          "pdfField": "ProfitPlan"
+        },
+        {
+          "id": "fundingSources",
+          "label": "Breakdown of your funding sources (loans, personal funds, etc.).",
+          "type": "table",
+          "columns": [
+            "Source",
+            "Amount",
+            "Purpose"
+          ],
+          "pdfField": "FundingSources"
+        },
+        {
+          "id": "laborCosts",
+          "label": "Detail labor and personnel costs (e.g. number of staff, salaries).",
+          "type": "textarea",
+          "pdfField": "LaborCosts"
+        },
+        {
+          "id": "cashFlow",
+          "label": "12-month cash flow projection (income and expenses per month).",
+          "type": "table",
+          "columns": [
+            "Month",
+            "Income",
+            "Expenses",
+            "Net Cash Flow"
+          ],
+          "pdfField": "CashFlow"
+        }
+      ]
+    }
+  ]
+}

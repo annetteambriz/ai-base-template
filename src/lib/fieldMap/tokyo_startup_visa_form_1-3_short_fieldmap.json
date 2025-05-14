@@ -1,0 +1,183 @@
+{
+  "ApplicantName": {
+    "answerKey": "fullName",
+    "type": "text",
+    "maxLength": 50,
+    "required": true
+  },
+  "Email": {
+    "answerKey": "email",
+    "type": "email",
+    "maxLength": 100,
+    "required": true
+  },
+  "Signature": {
+    "answerKey": "signature",
+    "type": "text",
+    "maxLength": 50,
+    "required": false
+  },
+  "ApplicationDate_year": {
+    "answerKey": "applicationDate_year",
+    "type": "number",
+    "min": 1900,
+    "max": 2100,
+    "required": true
+  },
+  "ApplicationDate_month": {
+    "answerKey": "applicationDate_month",
+    "type": "number",
+    "min": 1,
+    "max": 12,
+    "required": true
+  },
+  "ApplicationDate_day": {
+    "answerKey": "applicationDate_day",
+    "type": "number",
+    "min": 1,
+    "max": 31,
+    "required": true
+  },
+  "BusinessMotivation": {
+    "answerKey": "businessMotivation",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": true
+  },
+  "ApplicantRole": {
+    "answerKey": "yourRole",
+    "type": "text",
+    "maxLength": 100,
+    "required": true
+  },
+  "Qualifications": {
+    "answerKey": "qualifications",
+    "type": "textarea",
+    "maxLength": 500,
+    "required": true
+  },
+  "JointApplicants": {
+    "answerKey": "jointApplicants",
+    "type": "textarea",
+    "maxLength": 100,
+    "required": false
+  },
+  "StartDate_year": {
+    "answerKey": "startupDate_year",
+    "type": "number",
+    "min": 1900,
+    "max": 2100,
+    "required": true
+  },
+  "StartDate_month": {
+    "answerKey": "startupDate_month",
+    "type": "number",
+    "min": 1,
+    "max": 12,
+    "required": true
+  },
+  "StartDate_day": {
+    "answerKey": "startupDate_day",
+    "type": "number",
+    "min": 1,
+    "max": 31,
+    "required": true
+  },
+  "IndustryType": {
+    "answerKey": "businessType",
+    "type": "text",
+    "maxLength": 100,
+    "required": true
+  },
+  "ProductsServices": {
+    "answerKey": "productsServices",
+    "type": "textarea",
+    "maxLength": 300,
+    "required": true
+  },
+  "OfficeLocation": {
+    "answerKey": "officeLocation",
+    "type": "text",
+    "maxLength": 200,
+    "required": false
+  },
+  "CapitalAmount": {
+    "answerKey": "capital",
+    "type": "number",
+    "format": "¥ (JPY, thousands)",
+    "maxLength": 10,
+    "required": true
+  },
+  "ShareholderComposition": {
+    "answerKey": "shareholders",
+    "type": "table",
+    "rows": 3,
+    "columns": [
+      {
+        "id": "name",
+        "label": "Shareholder Name",
+        "pdfFields": ["Shareholder_1_Name", "Shareholder_2_Name", "Shareholder_3_Name"]
+      },
+      {
+        "id": "address",
+        "label": "Address",
+        "pdfFields": ["Shareholder_1_Address", "Shareholder_2_Address", "Shareholder_3_Address"]
+      },
+      {
+        "id": "ratio",
+        "label": "Shareholding Ratio",
+        "pdfFields": ["Shareholder_1_Ratio", "Shareholder_2_Ratio", "Shareholder_3_Ratio"]
+      }
+    ],
+    "required": false
+  },
+  "directorName": {
+    "answerKey": "directorName",
+    "type": "text",
+    "maxLength": 100,
+    "required": false
+  },
+  "directorNationality": {
+    "answerKey": "directorNationality",
+    "type": "text",
+    "maxLength": 100,
+    "required": false
+  },
+  "directorAddress": {
+    "answerKey": "directorAddress",
+    "type": "text",
+    "maxLength": 100,
+    "required": false
+  },
+  "directorPost": {
+    "answerKey": "directorPost",
+    "type": "text",
+    "maxLength": 100,
+    "required": false
+  },
+  "EmployeeCount": {
+    "answerKey": "employeeCount",
+    "type": "group",
+    "fields": [
+      {
+        "id": "employeesFullTime",
+        "type": "number"
+      },
+      {
+        "id": "employeesPartTime",
+        "type": "number"
+      },
+      {
+        "id": "employeesTotal",
+        "type": "number"
+      }
+    ],
+    "required": false
+  },
+  "BusinessOutline": {
+    "answerKey": "businessOutline",
+    "type": "textarea",
+    "maxLength": 1000,
+    "required": true
+  }
+}

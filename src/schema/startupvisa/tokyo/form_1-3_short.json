@@ -1,0 +1,255 @@
+{
+  "formName": "Tokyo Startup Visa Form 1-3",
+  "formDescription": "This form is for individuals applying for the Tokyo Startup Visa. It collects information about the applicant's business plan and personal details.",
+  "formVersion": "1.0",
+  "formType": "startupvisa",
+  "formId": "tokyo_startupvisa_form_1-3_pages1-2",
+  "pdfTemplate": "/pdfs/startup_visa_template.pdf",
+  "sections": [
+    {
+      "section": "Applicant Information",
+      "questions": [
+        {
+          "id": "fullName",
+          "label": "What is your full legal name?",
+          "placeholder": "e.g. Janet Doe",
+          "type": "text",
+          "pdfField": "ApplicantName",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "What is your email address?",
+          "type": "email",
+          "pdfField": "Email",
+          "required": true
+        },
+        {
+          "id": "signature",
+          "label": "Please provide your signature (type your name as a digital signature).",
+          "type": "text",
+          "pdfField": "Signature",
+          "required": false
+        },
+        {
+          "id": "applicationDate",
+          "label": "Application date (Year / Month / Day)",
+          "type": "group",
+          "fields": [
+            {
+              "id": "applicationDate_year",
+              "label": "Year",
+              "type": "number",
+              "min": 1900,
+              "max": 2100,
+              "pdfField": "ApplicationDate_year",
+              "required": true
+            },
+            {
+              "id": "applicationDate_month",
+              "label": "Month",
+              "type": "number",
+              "min": 1,
+              "max": 12,
+              "pdfField": "ApplicationDate_month",
+              "required": true
+            },
+            {
+              "id": "applicationDate_day",
+              "label": "Day",
+              "type": "number",
+              "min": 1,
+              "max": 31,
+              "pdfField": "ApplicationDate_day",
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "Personal and Business Background",
+      "questions": [
+        {
+          "id": "businessMotivation",
+          "label": "Why are you starting a business in Tokyo? What are your goals?",
+          "type": "textarea",
+          "pdfField": "BusinessMotivation",
+          "required": true
+        },
+        {
+          "id": "yourRole",
+          "label": "What will your role or position be in the business?",
+          "type": "text",
+          "pdfField": "ApplicantRole",
+          "required": true
+        },
+        {
+          "id": "qualifications",
+          "label": "What qualifications or experience do you have for this business?",
+          "type": "textarea",
+          "pdfField": "Qualifications",
+          "required": true
+        },
+        {
+          "id": "jointApplicants",
+          "label": "Are any other individuals applying with you? If so, please list their full names.",
+          "type": "textarea",
+          "pdfField": "JointApplicants",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section": "Business Plan Overview",
+      "questions": [
+        {
+          "id": "startupDate",
+          "label": "When do you plan to start your business?",
+          "type": "group",
+          "fields": [
+            {
+              "id": "startupDate_year",
+              "label": "Year",
+              "type": "number",
+              "min": 1900,
+              "max": 2100,
+              "pdfField": "StartDate_year",
+              "required": true
+            },
+            {
+              "id": "startupDate_month",
+              "label": "Month",
+              "type": "number",
+              "min": 1,
+              "max": 12,
+              "pdfField": "StartDate_month",
+              "required": true
+            },
+            {
+              "id": "startupDate_day",
+              "label": "Day",
+              "type": "number",
+              "min": 1,
+              "max": 31,
+              "pdfField": "StartDate_day",
+              "required": true
+            }
+          ]
+        },
+        {
+          "id": "businessType",
+          "label": "What industry is your business in?",
+          "type": "text",
+          "pdfField": "IndustryType",
+          "required": true
+        },
+        {
+          "id": "productsServices",
+          "label": "What products or services will you offer?",
+          "type": "textarea",
+          "pdfField": "ProductsServices",
+          "required": true
+        },
+        {
+          "id": "officeLocation",
+          "label": "Where will your office be located?",
+          "type": "text",
+          "pdfField": "OfficeLocation",
+          "required": false
+        },
+        {
+          "id": "capital",
+          "label": "How much capital or personal funds will you invest (in thousands of yen)?",
+          "type": "number",
+          "pdfField": "CapitalAmount",
+          "required": true
+        },
+        {
+          "id": "shareholders",
+          "label": "List all shareholders including name, address, and shareholding ratio.",
+          "type": "table",
+          "columns": [
+            "Shareholder Name",
+            "Address",
+            "Shareholding Ratio"
+          ],
+          "pdfField": "ShareholderComposition",
+          "required": false
+        },
+        {
+          "id": "directors",
+          "label": "List all directors (excluding the applicant):",
+          "type": "group",
+          "fields": [
+            {
+              "id": "directorName",
+              "label": "Name",
+              "type": "text",
+              "pdfField": "directorName",
+              "maxLength": 100,
+              "required": false
+            },
+            {
+              "id": "directorNationality",
+              "label": "Nationality",
+              "type": "text",
+              "pdfField": "directorNationality",
+              "maxLength": 100,
+              "required": false
+            },
+            {
+              "id": "directorAddress",
+              "label": "Address",
+              "type": "text",
+              "pdfField": "directorAddress",
+              "maxLength": 100,
+              "required": false
+            },
+            {
+              "id": "directorPost",
+              "label": "Post",
+              "type": "text",
+              "pdfField": "directorPost",
+              "maxLength": 100,
+              "required": false
+            }
+          ]
+        },
+        {
+          "id": "employeeCount",
+          "label": "Number of employees: Full-time, Part-time, and Total.",
+          "type": "group",
+          "fields": [
+            {
+              "id": "employeesFullTime",
+              "label": "Full-time employees",
+              "type": "number"
+            },
+            {
+              "id": "employeesPartTime",
+              "label": "Part-time employees",
+              "type": "number"
+            },
+            {
+              "id": "employeesTotal",
+              "label": "Total employees",
+              "type": "number"
+            }
+          ],
+          "pdfField": "EmployeeCount",
+          "required": false
+        },
+        {
+          "id": "businessOutline",
+          "label": "Outline the business you plan to conduct (including products and services):",
+          "type": "textarea",
+          "placeholder": "Describe your business activities, products, and services in detail.",
+          "pdfField": "BusinessOutline",
+          "maxLength": 1000,
+          "required": true
+        }
+      ]
+    }
+  ]
+}
